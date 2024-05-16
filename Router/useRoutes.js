@@ -1,0 +1,12 @@
+const express = require("express");
+const userRouter = express.Router();
+
+userRouter.post("/signup", (req, res) => {
+  res.send("signpage");
+});
+
+userRouter.post("/login", (req, res) => {
+  res.send("LoginPage");
+});
+
+module.exports = userRouter;
